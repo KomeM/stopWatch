@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8" />
     <title>ポップアップ用ウインドウ</title>
     <script>
-
      window.onload = function() {
        disp('index.html');
        window.open('about:blank','_self').close(); 
      };
+     function disp(url) {
+       window.open(url, "window_name", 'pupUpWindow');
+     }
     </script>
   </head>
 
