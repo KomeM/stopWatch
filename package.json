@@ -8,7 +8,10 @@
     "build": "babel src -d lib",
     "watch": "babel src -w -d lib",
     "build:timer": "browserify -t [ babelify --presets [ es2016 react ] ] src/timer.jsx -o lib/timer.js",
-    "build:count": "browserify -t [ babelify --presets [ es2016 react ] ] src/counter.jsx -o lib/counter.js"
+    "build:count": "browserify -t [ babelify --presets [ es2016 react ] ] src/counter.jsx -o lib/counter.js",
+    "watch:timer": "watchify -v -t [ babelify --presets [ es2016 react ] ] src/timer.jsx -o lib/timer.js",
+    "watch:count": "watchiify -v -t [ babelify --presets [ es2016 react ] ] src/counter.jsx -o lib/counter.js"
+
   },
   "keywords": [],
   "author": "",
@@ -31,6 +34,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babelify": "^8.0.0",
+    "braces": "^2.3.2",
     "css-loader": "^2.1.1",
     "style-loader": "^0.23.1",
     "watchify": "^3.11.1"
